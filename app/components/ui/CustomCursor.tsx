@@ -5,45 +5,44 @@ import { useEffect, useState } from "react";
 import { FaHandPointer } from "react-icons/fa"; 
 
 const MacArrow = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="drop-shadow-sm"
-  >
-    <path
-      d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z"
-      fill="black"
-      stroke="white"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="drop-shadow-sm"
+    >
+      <path
+        d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z"
+        fill="black"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
 
 export default function CustomCursor() {
-  const cursorX = useMotionValue(-100);
+  const cursorX = useMotionValue(-100); 
   const cursorY = useMotionValue(-100);
-  
-  const [isVisible, setIsVisible] = useState(false);
   const [cursorVariant, setCursorVariant] = useState<"default" | "pointer">("default");
+  const [opacity, setOpacity] = useState(0); 
 
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
-      if (!isVisible) setIsVisible(true);
+      setOpacity(1); 
     };
 
     const handleMouseLeave = () => {
-      setIsVisible(false);
+      setOpacity(0);
     };
 
     const handleMouseEnter = () => {
-      setIsVisible(true);
+      setOpacity(1);
     };
 
     const checkHover = (e: MouseEvent) => {
@@ -56,7 +55,7 @@ export default function CustomCursor() {
         target.tagName === "LABEL" ||
         target.closest("button") ||
         target.closest("a") ||
-        window.getComputedStyle(target).cursor === "pointer";
+        window.getComputedStyle(target).cursor === "pointer"; 
 
       setCursorVariant(isClickable ? "pointer" : "default");
     };
@@ -72,7 +71,8 @@ export default function CustomCursor() {
       document.removeEventListener("mouseenter", handleMouseEnter);
       window.removeEventListener("mouseover", checkHover);
     };
-  }, [cursorX, cursorY, isVisible]);
+  }, [cursorX, cursorY]); 
+
 
   if (
     typeof window !== "undefined" &&
@@ -87,22 +87,21 @@ export default function CustomCursor() {
       style={{
         x: cursorX,
         y: cursorY,
-        opacity: isVisible ? 1 : 0,
+        opacity: opacity, 
       }}
-      transition={{ duration: 0 }}
+      transition={{ duration: 0 }} 
     >
       <motion.div
         animate={{
           opacity: cursorVariant === "default" ? 1 : 0,
           scale: cursorVariant === "default" ? 1 : 0.8,
         }}
-        transition={{ duration: 0.15 }}
+        transition={{ duration: 0.15 }} 
         className="absolute top-0 left-0"
       >
         <MacArrow />
       </motion.div>
 
-      {/* 2. حالت دست (با استفاده از React Icons) */}
       <motion.div
         animate={{
           opacity: cursorVariant === "pointer" ? 1 : 0,

@@ -39,7 +39,7 @@ export default function RootLayout({
           <CustomCursor />
         <SmoothScrolling>
 
-          <div className="flex flex-col min-h-screen w-full max-w-6xl mx-auto px-4">
+          <div className="flex flex-col min-h-screen w-full max-w-6xl mx-auto">
             <Header />
             <main className="flex-grow w-full mt-10">{children}</main>
             <Footer />

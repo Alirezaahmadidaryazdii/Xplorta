@@ -120,9 +120,9 @@ export default function CommentsSlider() {
       className="flex flex-col gap-10 items-center w-full mt-20 md:mt-50 px-4 md:px-0"
     >
       <TitleSection
-        title1="Turn your WhatsApp Backups"
-        title2="into powerful insights"
-        subtitle="Smart insights from your social backups"
+        title1="Turn your Social archives"
+        title2="into deeper insights"
+        subtitle="Smart analytics from your stored social sources"
         icon={<Message variant="Bulk" size="25" className="text-primary" />}
       />
 
@@ -264,15 +264,16 @@ export default function CommentsSlider() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-          className="max-w-3xl mx-auto text-center w-[90%] md:w-[40%] text-text-primary text-xl md:text-2xl leading-relaxed font-[Clash Grotesk Medium] relative"
+          className="max-w-3xl text-text-secondary mx-auto text-center w-[90%] md:w-[40%] text-text-primary text-xl md:text-2xl leading-relaxed font-[Clash Grotesk Medium] relative"
         >
           <span className="absolute -left-6 -top-4 text-text-secondary text-7xl select-none">
             “
           </span>
-          Raycast is incrementally{" "}
-          <span className="font-semibold text-white">turning</span> my Mac into
-          an AI-native operating system{" "}
-          <span className="text-text-secondary">and I’m so here for it.</span>
+          Raycast is gradually shaping{" "}
+          <span className="font-semibold text-white"> my Mac into
+          an AI-driven system,{" "}
+          </span>
+          <span className="text-text-secondary">and I'm fully excited for it.</span>
           <span className="absolute -right-6 -bottom-12 text-text-secondary text-7xl select-none">
             ”
           </span>
@@ -281,3 +282,4 @@ export default function CommentsSlider() {
     </motion.div>
   );
 }
+

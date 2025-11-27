@@ -24,7 +24,7 @@ export function TitleSection({
         className="mb-2 flex items-center justify-center gap-2 px-4 py-2 w-fit max-w-full sm:min-w-[300px] md:w-[440px] min-h-[40px] sm:h-[45px] bg-gradient-to-r from-[#042d2e99] via-secondary to-[#042d2e99] rounded-full text-primary font-clash font-normal text-sm sm:text-[17px] leading-tight sm:leading-[25px] tracking-[0.02em] text-center"
       >
         <span className="shrink-0">{icon}</span>
-        <span className="truncate">{subtitle}</span>
+        <span className="truncate text-[15px]">{subtitle}</span>
       </motion.span>
 
       <motion.h1

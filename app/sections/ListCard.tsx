@@ -73,15 +73,15 @@ export default function ListCardSlider() {
 
   const cardsData = [
     {
-      title: "Turn your WhatsApp backups into powerful insights",
+      title: "Verify your social data with instant precision.",
       image: "/shield-tick.svg",
     },
     {
-      title: "Turn your WhatsApp backups into powerful insights",
+      title: "AI-powered insights from all your social platforms.",
       image: "/aiCardBlog.svg",
     },
     {
-      title: "Turn your WhatsApp backups into powerful insights",
+      title: "Filter and reveal hidden patterns across your socials.",
       image: "/FILTER.svg",
     },
   ];
@@ -107,9 +107,9 @@ export default function ListCardSlider() {
       <style>{animationStyle}</style>
 
       <TitleSection
-        title1="Turn your WhatsApp backups"
-        title2="into powerful insights"
-        subtitle="Smart insights from your social backups"
+        title1="Turn your platform archives"
+        title2="into richer insights"
+        subtitle="Smart analytics from your secured social backups"
         icon={<Layer variant="Bulk" size="25" className="text-primary" />}
       />
 
@@ -137,7 +137,7 @@ export default function ListCardSlider() {
                     transition={{ duration: 0.5, ease: "easeInOut" }}
                     className="flex flex-col-reverse md:flex-row gap-6 md:gap-4 items-center w-full h-full justify-center absolute inset-0"
                   >
-                    <h2 className="font-[Clash Grotesk Medium] ml-0 md:ml-10 font-medium text-3xl md:text-5xl leading-tight md:leading-12 tracking-[0.02em] text-center md:text-left bg-clip-text text-transparent bg-gradient-to-b from-text-primary from-[70%] to-text-secondary p-4 md:p-6">
+                    <h2 className="font-[Clash Grotesk Medium] ml-0 md:ml-10 font-medium text-2xl md:text-5xl leading-tight md:leading-12 tracking-[0.02em] text-center md:text-left bg-clip-text text-transparent bg-gradient-to-b from-text-primary from-[70%] to-text-secondary p-4 md:p-6">
                       {cardsData[activeIndex].title
                         .split("\n")
                         .map((line, idx) => (

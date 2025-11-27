@@ -13,11 +13,13 @@ export default function Header() {
   const lenis = useLenis();
 
   const navLinks = [
-    { href: "#products", label: "Products" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#company", label: "Company" },
-    { href: "#blog", label: "Blog" },
-    { href: "#changelog", label: "ChangeLog" },
+    // { href: "#overview", label: "Overview" },
+    { href: "#platforms", label: "Platforms" },
+    { href: "#insights", label: "Insights" },
+    { href: "#usecases", label: "Use Cases" },
+    { href: "#comments", label: "Comments" },
+    { href: "#blogs", label: "Blogs" },
+    { href: "#getstarted", label: "Get Started" },
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {

@@ -51,6 +51,11 @@ body {
   overflow-x: hidden;
 }
 
+body, * {
+  cursor: none !important;
+}
+
+
 .custom-btn {
   width: 140px;
   height: 36px;

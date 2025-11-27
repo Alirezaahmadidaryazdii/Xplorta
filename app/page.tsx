@@ -11,31 +11,31 @@ export default function Home() {
   return (
     <div className="bg-background text-text-primary relative">
       <ScrollNavigator />      
-      <section className="section-scroll">
+      <section className="section-scroll" id="overview">
         <Hero />
       </section>
 
-      <section className="section-scroll" id="products">
+      <section className="section-scroll" id="platforms">
         <Socials />
       </section>
 
-      <section className="section-scroll" id="pricing">
+      <section className="section-scroll" id="insights">
         <CardBlogs />
       </section>
 
-      <section className="section-scroll" id="company">
+      <section className="section-scroll" id="usecases">
         <ListCard />
       </section>
 
-      <section className="section-scroll" id="blog">
+      <section className="section-scroll" id="comments">
         <Comments />
       </section>
 
-      <section className="section-scroll" id="changelog">
+      <section className="section-scroll" id="blogs">
         <AboutUs />
       </section>
 
-      <section className="section-scroll">
+      <section className="section-scroll" id="getstarted">
         <GlowCurveSection />
       </section>
     </div>

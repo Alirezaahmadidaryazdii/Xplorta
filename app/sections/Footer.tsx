@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
-import { MessageQuestion, Instagram, Youtube } from "iconsax-reactjs";
-import { LiaLinkedin } from "react-icons/lia";
 import { motion, Variants } from "framer-motion";
+import { ExportCurve, Instagram, Youtube } from "iconsax-reactjs";
+import Image from "next/image";
+import Link from "next/link";
+import { LiaLinkedin } from "react-icons/lia";
 
 export default function Footer() {
   const containerVariants: Variants = {
@@ -30,9 +30,8 @@ export default function Footer() {
   };
 
   return (
-    <div className="relative w-full flex justify-center items-end pb-10 pt-20 md:pt-40 overflow-hidden">     
-
- <motion.div
+    <div className="relative w-full flex justify-center items-end pb-10 pt-20 md:pt-40 overflow-hidden">
+      <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -65,8 +64,8 @@ export default function Footer() {
       >
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 md:gap-0">
           {/* Logo Section */}
-          <motion.div 
-            variants={itemVariants} 
+          <motion.div
+            variants={itemVariants}
             className="flex flex-col items-center md:items-start gap-6 w-full md:w-auto"
           >
             <div className="flex items-center gap-3">
@@ -82,23 +81,31 @@ export default function Footer() {
               </h2>
             </div>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 bg-white rounded-[50px] px-6 py-2.5 hover:bg-gray-200 transition-colors"
+            <a
+              href="https://panel.xplorta.com/"
+              target="_blank" // This ensures the link opens in a new tab
+              rel="noopener noreferrer" // Good practice for security when using target="_blank"
             >
-              <MessageQuestion size="18" variant="Bold" color="#0F717E" />
-              <span className="text-[#0F717E] font-medium text-sm">
-                Drop a Backup
-              </span>
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center gap-2 bg-white rounded-[50px] px-6 py-2.5 hover:bg-gray-200 transition-colors"
+              >
+                <ExportCurve size="18" variant="Bold" color="#0F717E" />
+                <span className="text-[#0F717E] font-medium text-sm">
+                  Drop a Backup
+                </span>
+              </motion.button>
+            </a>
           </motion.div>
 
           {/* Links Section */}
           <div className="grid grid-cols-2 md:flex w-full md:w-auto gap-x-4 gap-y-8 md:gap-12 justify-center">
-            
             {/* Info */}
-            <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start gap-4 min-w-[100px]">
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-col items-center md:items-start gap-4 min-w-[100px]"
+            >
               <h4 className="text-white text-[10px] font-bold uppercase tracking-widest opacity-80">
                 Info
               </h4>
@@ -117,7 +124,10 @@ export default function Footer() {
             </motion.div>
 
             {/* About */}
-            <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start gap-4 min-w-[100px]">
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-col items-center md:items-start gap-4 min-w-[100px]"
+            >
               <h4 className="text-white text-[10px] font-bold uppercase tracking-widest opacity-80">
                 About
               </h4>
@@ -136,7 +146,10 @@ export default function Footer() {
             </motion.div>
 
             {/* Contact Us */}
-            <motion.div variants={itemVariants} className="col-span-2 md:col-span-1 flex flex-col items-center md:items-start gap-4 min-w-[140px]">
+            <motion.div
+              variants={itemVariants}
+              className="col-span-2 md:col-span-1 flex flex-col items-center md:items-start gap-4 min-w-[140px]"
+            >
               <h4 className="text-white text-[10px] font-bold uppercase tracking-widest opacity-80">
                 Contact Us
               </h4>
@@ -149,7 +162,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <motion.div 
+        <motion.div
           variants={itemVariants}
           className="flex flex-col-reverse md:flex-row justify-between items-center mt-10 md:mt-0 pt-4 border-t border-white/5 md:border-none gap-4"
         >

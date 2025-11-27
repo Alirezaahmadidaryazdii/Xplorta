@@ -90,9 +90,10 @@ export const GlowCurveSection = () => {
           "
           style={{ fontFamily: '"Clash Grotesk", sans-serif' }}
         >
-          Turn your WhatsApp <br />
-          backups into powerful
+          Turn your multi-app backups <br />
+          into deeper insights
         </motion.h2>
+         
 
         <motion.p
           variants={itemVariants}
@@ -103,8 +104,8 @@ export const GlowCurveSection = () => {
           "
           style={{ fontFamily: '"Clash Display", sans-serif' }}
         >
-          Turn your backup data into <br className="hidden md:block" />
-          actionable insights
+          Turn your stored data into <br className="hidden md:block" />
+          practical insights
         </motion.p>
 
         <motion.div variants={itemVariants}>
