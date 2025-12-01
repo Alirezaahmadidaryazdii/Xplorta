@@ -12,7 +12,7 @@ import "./globals.css";
 const clashDisplay = localFont({
   src: [
     {
-      path: "../public/fonts/ClashDisplay-Variable.ttf",
+      path: "../public/Fonts/ClashDisplay-Variable.ttf",
       style: "normal",
     },
   ],
