@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import CustomCursor from "./components/ui/CustomCursor";
 import SmoothScrolling from "./components/SmoothScrolling";
+import CustomCursor from "./components/ui/CustomCursor";
+import "./globals.css";
 import Footer from "./sections/Footer";
 import Header from "./sections/header";
 
@@ -12,7 +11,7 @@ import "./globals.css";
 const clashDisplay = localFont({
   src: [
     {
-      path: "../public/fonts/ClashDisplay-Variable.ttf",
+      path: "../public/Fonts/ClashDisplay-Variable.ttf",
       style: "normal",
     },
   ],
