@@ -120,8 +120,8 @@ export default function CommentsSlider() {
       className="flex flex-col gap-10 items-center w-full mt-20 md:mt-50 px-4 md:px-0"
     >
       <TitleSection
-        title1="Turn your Social archives"
-        title2="into deeper insights"
+        title1="Turn your archived social"
+        title2="content into meaningful intelligence"
         subtitle="Smart analytics from your stored social sources"
         icon={<Message variant="Bulk" size="25" className="text-primary" />}
       />

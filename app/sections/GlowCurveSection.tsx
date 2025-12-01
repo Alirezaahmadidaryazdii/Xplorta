@@ -90,8 +90,8 @@ export const GlowCurveSection = () => {
           "
           style={{ fontFamily: '"Clash Grotesk", sans-serif' }}
         >
-          Turn your multi-app backups <br />
-          into deeper insights
+          Combine multi-app backups <br />
+          into one powerful insight engine
         </motion.h2>
          
 

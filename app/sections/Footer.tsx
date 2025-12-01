@@ -39,9 +39,9 @@ export default function Footer() {
         className="
           absolute left-0 -translate-x-1/2 -bottom-[100px] 
           w-[80%] h-[300px] 
-          md:w-[600px] md:h-[400px]
+          md:w-[1100px] md:h-[400px]
           bg-[radial-gradient(ellipse_at_center,rgba(15,113,126,0.5)_0%,transparent_70%)] 
-          blur-[60px]
+          blur-[90px]
           z-0 pointer-events-none
         "
       />

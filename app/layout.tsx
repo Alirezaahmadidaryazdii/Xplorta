@@ -42,8 +42,8 @@ export default function RootLayout({
           <div className="flex flex-col min-h-screen w-full max-w-6xl mx-auto">
             <Header />
             <main className="flex-grow w-full mt-10">{children}</main>
-            <Footer />
           </div>
+            <Footer />
         </SmoothScrolling>
       </body>
     </html>

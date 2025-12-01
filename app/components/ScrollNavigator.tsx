@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUp2 } from "iconsax-reactjs";
 import { useEffect, useState } from "react";
-import { useLenis } from "lenis/react"; // مطمئن شو که این هوک ایمپورت شده باشه
+import { useLenis } from "lenis/react";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +15,6 @@ export default function ScrollToTop() {
       const windowHeight = window.innerHeight;
       const docHeight = document.body.scrollHeight;
 
-      // وقتی کاربر به 150 پیکسلی انتهای صفحه رسید، دکمه نمایش داده شود
       if (scrollY + windowHeight >= docHeight - 150) {
         setIsVisible(true);
       } else {
@@ -29,11 +28,9 @@ export default function ScrollToTop() {
 
   const scrollToTop = () => {
     if (lenis) {
-      // استفاده از متد scrollTo لنیس برای بازگشت به بالا (0)
       lenis.scrollTo(0, {
-        // تنظیمات سرعت و نرمی (اختیاری - اگر حذف کنید از تنظیمات گلوبال استفاده می‌کند)
-        duration: 2, 
-        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // افکت easeOutExpo برای توقف نرم
+        duration: 2,
+        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       });
     } else {
       window.scrollTo({
@@ -53,7 +50,7 @@ export default function ScrollToTop() {
             exit={{ opacity: 0, y: 20, scale: 0.8 }}
             transition={{ duration: 0.3 }}
             onClick={scrollToTop}
-            className="p-3 md:p-4 bg-primary hover:bg-primary/90 backdrop-blur-md text-white rounded-full shadow-xl border border-white/10 active:scale-95 flex items-center justify-center"
+            className="p-3 md:p-4 bg-primary/70 hover:bg-primary/90 backdrop-blur-md text-white rounded-full shadow-xl border border-white/10 active:scale-95 flex items-center justify-center"
           >
             <ArrowUp2 size="24" variant="Bold" />
           </motion.button>

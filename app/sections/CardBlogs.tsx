@@ -53,8 +53,8 @@ export default function CardBlogs() {
   return (
     <div className="w-full flex flex-col gap-3 justify-center items-center mt-10 mb-3">
       <TitleSection
-        title1="Turn your Social archives into"
-        title2="useful insights"
+        title1="Make your social archives work"
+        title2="for you with high-value insights"
         subtitle="Smart analytics from your archived social data"
         icon={<FlashCircle variant="Bulk" size="25" className="text-primary" />}
       />

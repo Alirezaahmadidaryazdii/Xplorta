@@ -34,7 +34,7 @@ export function TitleSection({
         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         className="
     flex flex-col justify-center items-center text-center
-    text-2xl sm:text-5xl lg:text-[60px]
+    text-2xl sm:text-5xl lg:text-[50px]
     leading-[1.3] sm:leading-[1.2] lg:leading-[70px]
     font-bold tracking-[0.02em]
     bg-clip-text text-transparent bg-gradient-to-b

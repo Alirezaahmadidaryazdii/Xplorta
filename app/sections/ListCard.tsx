@@ -77,11 +77,11 @@ export default function ListCardSlider() {
       image: "/shield-tick.svg",
     },
     {
-      title: "AI-powered insights from all your social platforms.",
+      title: "Get AI insights across all your socials",
       image: "/aiCardBlog.svg",
     },
     {
-      title: "Filter and reveal hidden patterns across your socials.",
+      title: "Reveal hidden patterns in your social data.",
       image: "/FILTER.svg",
     },
   ];
@@ -107,8 +107,8 @@ export default function ListCardSlider() {
       <style>{animationStyle}</style>
 
       <TitleSection
-        title1="Turn your platform archives"
-        title2="into richer insights"
+        title1="Transform platform-level"
+        title2="archives into high-value insights"
         subtitle="Smart analytics from your secured social backups"
         icon={<Layer variant="Bulk" size="25" className="text-primary" />}
       />
@@ -153,7 +153,7 @@ export default function ListCardSlider() {
                       alt=""
                       width={250}
                       height={250}
-                      className="mr-0 md:mr-20 mb-4 md:mb-0 w-[200px] h-[200px] md:w-[250px] md:h-[250px]"
+                      className="mr-0 md:mr-20 mb-10 md:mb-0 w-[200px] h-[200px] md:w-[250px] md:h-[250px]"
                     />
                   </motion.div>
                 </AnimatePresence>

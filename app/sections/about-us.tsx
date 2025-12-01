@@ -290,7 +290,7 @@
 
 //         <div
 //           className="
-//             relative w-full max-w-6xl h-[200px] md:h-[280px] flex justify-center items-center 
+//             relative w-full max-w-6xl h-[200px] md:h-[280px] flex justify-center items-center
 //             overflow-visible py-4
 //             [mask-image:linear-gradient(to_right,transparent,black_2%,black_98%,transparent)]
 //             md:[mask-image:linear-gradient(to_right,transparent,black_2%,black_98%,transparent)]
@@ -309,7 +309,7 @@
 //                 transition={{ duration: 0.5, ease: "easeInOut" }}
 //                 className="
 //                   cursor-pointer top-1/2 -translate-y-1/2
-//                   w-[300px] md:w-[500px] h-[140px] md:h-[180px] 
+//                   w-[300px] md:w-[500px] h-[140px] md:h-[180px]
 //                   flex items-center justify-center
 //                   overflow-visible
 //                   absolute
@@ -433,10 +433,10 @@
 //           />
 
 //           <h2
-//             className="text-lg md:text-xl font-bold bg-clip-text text-transparent 
-//     bg-gradient-to-r from-primary via-primary to-text-primary 
-//     bg-[length:200%_100%] bg-[position:100%_0] 
-//     group-hover:bg-[position:0%_0] 
+//             className="text-lg md:text-xl font-bold bg-clip-text text-transparent
+//     bg-gradient-to-r from-primary via-primary to-text-primary
+//     bg-[length:200%_100%] bg-[position:100%_0]
+//     group-hover:bg-[position:0%_0]
 //     transition-[background-position] duration-500 ease-in-out"
 //           >
 //             XPLORTA Blogs
@@ -454,35 +454,6 @@
 //     </motion.div>
 //   );
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 "use client";
 
@@ -697,8 +668,8 @@ export default function AboutUs() {
         transition={{ duration: 0.5 }}
       >
         <TitleSection
-          title1="Turn your social archives into"
-          title2="valuable insights"
+          title1="Turn your social archives"
+          title2="into valuable intelligence"
           subtitle="Smart analytics from your archived social data"
           icon={
             <DocumentText size="25" className="text-primary" variant="Bulk" />
