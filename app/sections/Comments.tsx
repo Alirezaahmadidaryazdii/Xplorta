@@ -178,8 +178,7 @@ export default function CommentsSlider() {
                   bg-card transition-all duration-500
                   ${
                     isActive
-                      ?
-                        "border border-border shadow-[0_0_30px_rgba(255,255,255,0.25)]"
+                      ? "border border-border shadow-[0_0_30px_rgba(255,255,255,0.25)]"
                       : "border border-transparent bg-card/50"
                   }
                 `}
@@ -266,24 +265,21 @@ export default function CommentsSlider() {
           transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
           className="max-w-3xl text-text-secondary mx-auto text-center w-[90%] md:w-[40%] text-text-primary text-xl md:text-2xl leading-relaxed font-[Clash Grotesk Medium] relative"
         >
-           <span className="absolute -left-6 -top-4 text-text-secondary text-7xl select-none">
-    “
-  </span>
-
-  Explorta is steadily transforming my{" "}
-  <span className="font-semibold text-white">
-    social backups into an AI-powered intelligence hub,
-  </span>{" "}
-  <span className="text-text-secondary">
-    and I’m genuinely excited about it.
-  </span>
-
-  <span className="absolute -right-6 -bottom-12 text-text-secondary text-7xl select-none">
-    ”
-  </span>
+          <span className="absolute -left-6 -top-4 text-text-secondary text-7xl select-none">
+            “
+          </span>
+          Explorta is steadily transforming my{" "}
+          <span className="font-semibold text-white">
+            social backups into an AI-powered intelligence hub,
+          </span>{" "}
+          <span className="text-text-secondary">
+            and I’m genuinely excited about it.
+          </span>
+          <span className="absolute -right-6 -bottom-12 text-text-secondary text-7xl select-none">
+            ”
+          </span>
         </motion.blockquote>
       </div>
     </motion.div>
   );
 }
-
